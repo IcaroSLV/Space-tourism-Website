@@ -1,0 +1,10 @@
+.TechnologyContainer {
+    background-image: url(../../img/technology/background-technology-desktop.jpg);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
