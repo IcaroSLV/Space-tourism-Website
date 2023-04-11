@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: 'Schibsted Grotesk', sans-serif;
+}
+
+
 .App {
   display: flex;
   flex-direction: column;
@@ -47,7 +54,7 @@
   top: 30px;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 880px) {
   .linkContainer {
     padding-right: 0;
   }
@@ -57,7 +64,7 @@
   }
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 550px) {
   .linkContainer {
     width: 100vw;
   }
@@ -66,13 +73,13 @@
   }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 470px) {
   .linkContainer a{
     font-size: .5em;
   }
 }
 
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 350px) {
   .buttonHamburguer {
     position: absolute;
     right: 0;
