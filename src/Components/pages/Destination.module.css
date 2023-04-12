@@ -145,7 +145,10 @@
 }
 
 @media screen and (max-width: 321px) {
-    * {overflow: auto;}
+    * {
+        overflow: auto;
+        overflow-x: hidden;
+    }
 
     .ContentContainer h1 {
         text-align: center;
@@ -162,8 +165,11 @@
         font-size: .7em;
         
     }
+    .descriptionSection{
+        overflow: hidden;
+    }
     .descriptionSection h1 {
-        font-size: 4em;
+        font-size: 3.5em;
         height: 1.5em;
         margin-bottom: 0;
     }
