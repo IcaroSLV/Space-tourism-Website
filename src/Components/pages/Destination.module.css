@@ -1,10 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 .DestinationContainer {
     background-image: url(../../img/destination/background-destination-desktop.jpg);
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
+    width: 100%;
+    height: 100%;
     background-size: cover;
+    position: absolute;
     top: 0;
     right: 0;
     z-index: -1;
+    overflow: hidden;
+}
+
+.ContentContainer {
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 8em;
+    align-items: center;
+    gap: 3em;
+}
+.ContentContainer h1 {
+    font-weight: lighter;
+}
+
+
+.destinationsection {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.ContentContainer h1 span {
+    color: gray;
+}
+
+.imgContent img {
+    height: 20em;
+    width: 20em;
+}
+
+.destinationContent {
+    width: 30em;
+}
+
+.ButtonContainer button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    margin-left: 2em;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.ButtonContainer .Select {
+    border-bottom: 2px solid white;
+}
+.descriptionSection {
+    margin: 0;
+}
+
+.descriptionSection h1{
+    font-size: 4em;
+    height: .6em;
+}
+
+.travelSection {
+    display: flex;
+    margin-top: 2em;
+    padding-top: 1.5em;
+    border-top: 1px solid white;
+    gap: 5em;
+}
+
+.travelSection div h3 {
+    font-size: 1em;
+    margin: 0;
+}
+.travelSection div p {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+@media screen and (max-width: 880px){
+    .DestinationContainer {
+        overflow: auto;
+        background-image: url('../../img/destination/background-destination-tablet.jpg');
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+    }
+    
+    .destinationsection {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+    .destinationContent {
+        margin-bottom: 2em;
+    }
+}
+
+
+@media screen and (max-width: 570px) {
+    .DestinationContainer {
+        background-image: url('../../img/destination/background-destination-mobile.jpg');
+    }
+    .ContentContainer h1 {
+        font-size: 1.5em;
+    }
+
+    .destinationContent {
+        width: 20em;
+    }
+
+    .imgContent img {
+        height: 15em;
+        width: 15em;
+    }
+    .ButtonContainer button{
+        margin-left: .6em;
+        font-size: 1em;
+        margin-bottom: .5em;
+    }
+    .descriptionSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .descriptionSection h1 {
+        font-size: 5em;
+    }
+    .travelSection div {
+        width: 20em;
+    }
+    .travelSection div p{
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    * {overflow: auto;}
+
+    .ContentContainer h1 {
+        text-align: center;
+        width: 20em;
+        font-size: 1.2em;
+    }
+    .destinationContent {
+        width: 15em;
+    }
+    .ButtonContainer {
+        width: 100%;
+    }
+    .ButtonContainer button{
+        font-size: .7em;
+        
+    }
+    .descriptionSection h1 {
+        font-size: 4em;
+        height: 1.5em;
+        margin-bottom: 0;
+    }
+
+    .travelSection {
+        gap: 2em;
+        width: 15em;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .travelSection div h3 {
+        font-size: .7em;
+    }
+    .travelSection div p {
+        font-size: 1em;
+        
+    }
+
 }
