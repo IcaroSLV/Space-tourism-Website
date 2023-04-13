@@ -13,6 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-direction: column;
     height: 100vh;
     width: 100%;
     color: white;
@@ -82,4 +83,100 @@
     position: absolute;
     bottom: 0;
     right: 5em;
+}
+
+@media screen and (max-width: 1025px) {
+    .CrewDescription {
+        left: 5em;
+        width: 28em;
+        font-size: .8em;
+        top: 12em;
+    }
+    .imageContainer img{
+        height: 25em;
+        right: 0;
+    }
+    .buttonContainer {
+        bottom: 0;
+    }
+  }
+
+@media screen and (max-width: 770px) {
+    .CrewContainer {
+        background-image: url("../../img/crew/background-crew-tablet.jpg");
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+    }
+    .CrewDescription {
+        top: 10em;
+    }
+  }
+
+  @media screen and (max-width: 430px) {
+    .contentContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 10em;
+        height: 52em;
+        justify-content: center;
+    }
+    .CrewDescription {
+        align-items: center;
+        justify-content: center;
+        left: auto;
+    }
+    .CrewBio {
+       text-align: center;
+       width: 100%;
+    }
+    .buttonContainer {
+        gap: 2em;
+    }
+    .buttonContainer button {
+        height: 3em;
+        width: 3em;
+    }
+
+    .imageContainer img{
+        height: 20em;
+        right: 4em;
+    }
+  }
+
+@media screen and (max-width: 380px) {
+    .CrewDescription {
+        font-size: .7em;
+        top: 12em;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .CrewDescription {
+        font-size: .8em;
+        width: 22em;
+        height: 41em;
+        top: 0;
+    }
+
+    .CrewBio h3 {
+        font-size: 1.5em;
+    }
+    .CrewBio h1 {
+        font-size: 2.5em;
+    }
+
+    .buttonContainer {
+        top: 38.5em;
+    }
+
+    .buttonContainer button {
+        height: 2em;
+        width: 2em;
+    }
+
+    .imageContainer img{
+        height: 16em;
+        right: 2.5em;
+    }
 }
