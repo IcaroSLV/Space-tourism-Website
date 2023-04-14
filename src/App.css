@@ -43,14 +43,6 @@
   
 }
 
-.Selected {
-  border-bottom: 5px solid white;
-  padding-bottom: 1.5em;
-  position: relative;
-  top: 1em;
-  
-}
-
 .Containter {
   top: 30px;
 }

@@ -34,10 +34,10 @@ function App() {
         </div>
           <button className='buttonHamburguer' onClick={() => OpenMenu()}><img src={menuHangurguer}/></button>
           <div className='linkContainer'>
-          <Link  to="/" onClick={() => setCurrentPage(1)} className={currentPage == 1? "Selected" : ""}>HOME</Link>
-          <Link to="/destination" onClick={() => setCurrentPage(2)} className={currentPage == 2? "Selected" : ""}>DESTINATION</Link>
-          <Link to="/crew" onClick={() => setCurrentPage(3)} className={currentPage == 3? "Selected" : ""}>CREW</Link>
-          <Link to="/technology" onClick={() => setCurrentPage(4)} className={currentPage == 4? "Selected" : ""}>TECHNOLOGY</Link>
+          <Link  to="/" onClick={() => setCurrentPage(1)}>HOME</Link>
+          <Link to="/destination" onClick={() => setCurrentPage(2)}>DESTINATION</Link>
+          <Link to="/crew" onClick={() => setCurrentPage(3)}>CREW</Link>
+          <Link to="/technology" onClick={() => setCurrentPage(4)}>TECHNOLOGY</Link>
         </div>
       </div>
 
