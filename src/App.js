@@ -18,11 +18,11 @@ import Container from './Components/Layout/Container';
 
 function App() {
 
-  const [currentPage, setCurrentPage] = useState(1)
   const [menuIsOpen, setmenuisOpen] = useState(false)
-  
-  const OpenMenu = () => {
 
+  function ClickonPage(e) {
+
+    setmenuisOpen(false)
   }
 
   return (
@@ -30,14 +30,14 @@ function App() {
 
       <div className='navbar'>
         <div className='imgContent'>
-          <Link  to="/" onClick={() => setCurrentPage(1)}><img src={logo}/></Link>
+          <Link  to="/"><img src={logo}/></Link>
         </div>
-          <button className='buttonHamburguer' onClick={() => OpenMenu()}><img src={menuHangurguer}/></button>
-          <div className='linkContainer'>
-          <Link  to="/" onClick={() => setCurrentPage(1)}>HOME</Link>
-          <Link to="/destination" onClick={() => setCurrentPage(2)}>DESTINATION</Link>
-          <Link to="/crew" onClick={() => setCurrentPage(3)}>CREW</Link>
-          <Link to="/technology" onClick={() => setCurrentPage(4)}>TECHNOLOGY</Link>
+          <button className='buttonHamburguer' onClick={() => setmenuisOpen(!menuIsOpen)}><img src={menuHangurguer}/></button>
+          <div className={menuIsOpen? "HamburguerMenu" : "linkContainer"}>
+          <Link  to="/" onClick={() => ClickonPage(1)}>HOME</Link>
+          <Link to="/destination" onClick={() => ClickonPage(2)} >DESTINATION</Link>
+          <Link to="/crew" onClick={() => ClickonPage(3)}>CREW</Link>
+          <Link to="/technology" onClick={() => ClickonPage(4)}>TECHNOLOGY</Link>
         </div>
       </div>
 

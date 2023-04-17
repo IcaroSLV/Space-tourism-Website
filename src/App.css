@@ -2,7 +2,6 @@
 
 * {
   font-family: 'Montserrat', sans-serif;
-
 }
 
 
@@ -19,6 +18,7 @@
 
 .imgContent {
   margin: 1.5em 1.5em;
+  justify-self: flex-start;
 }
 
 .buttonHamburguer {
@@ -28,9 +28,12 @@
 }
 
 .linkContainer {
+  overflow: hidden;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  right: 0;
   height: 5em;
   backdrop-filter: blur(180px);
   margin-top: .5em;
@@ -40,11 +43,34 @@
   margin: 0 1.5em;
   text-decoration: none;
   color: white;
-  
 }
 
 .Containter {
   top: 30px;
+}
+
+.HamburguerMenu {
+  overflow: hidden;
+  display: flex;
+  padding: 1em;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+
+  width: 10em;
+  gap: .7em;
+  right: 25%;
+
+  overflow: hidden;
+}
+.HamburguerMenu a{
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+  border-bottom: 1px solid white;
+  padding: 0 20em;
 }
 
 @media screen and (max-width: 880px) {
@@ -59,46 +85,44 @@
 
 @media screen and (max-width: 550px) {
   .linkContainer {
-    width: 100vw;
+    width: 22em;
   }
   .linkContainer a{
-    font-size: .8em;
+    font-size: .7em;
   }
 }
 
 @media screen and (max-width: 470px) {
-  .linkContainer a{
-    font-size: .5em;
-  }
-}
-
-@media screen and (max-width: 350px) {
   .buttonHamburguer {
     position: absolute;
     right: 0;
     opacity: 1;
-    z-index: 1;
+    z-index: 3;
     background: transparent;
     border: none;
     right: 2em;
   }
-  .linkContainer {
-    flex-direction: column;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    gap: 2em;
-    height: 100vh;
-    width: 100vw;
-    z-index: -2;
-    opacity: 0;
 
+  .linkContainer {
+    z-index: -1;
+    opacity: 1;
+    background: none;
   }
   .Selected {
     border: 0;
   }
   .linkContainer a{
-    font-size: .8em;
+    margin: 0;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .HamburguerMenu {
+    right: 4.5em;
+    gap: .7em;
+    width: 7em;
+    right: 5em;
+  }
+
+} 
 
