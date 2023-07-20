@@ -1,5 +1,9 @@
 import styles from './Destination.module.css'
-import {useState, useEffect} from 'react'
+
+import {useState} from 'react'
+
+import data from '../../data.json'
+
 import moonImg from '../../img/destination/image-moon.png'
 import europaImg from '../../img/destination/image-europa.png'
 import marsImg from '../../img/destination/image-mars.png'
@@ -8,25 +12,9 @@ import titanImg from '../../img/destination/image-titan.png'
 
 function Destination() {
 
-    const [data, setData] = useState(null)
+    
     const [currentData, setCurrentData] = useState(0)
     const destinationImg = [moonImg, marsImg, europaImg, titanImg]
-
-    useEffect(() => {
-
-        const loadData = async() => {
-    
-        const res = await fetch("http://localhost:5000/destinations")
-        .then(resp => resp.json())
-        .then(data => data)
-        .catch(err => console.log(err))
-    
-        setData(res)
-    
-        }
-    
-        loadData()
-      }, [])
 
       
 
@@ -36,7 +24,7 @@ function Destination() {
             <h1><span>01</span> PICK YOUR DESINATION</h1>
             <div className={styles.destinationsection}>
                 <div className={styles.imgContent}>
-                    <img src={destinationImg[currentData]}></img>
+                    <img src={destinationImg[currentData]}/>
                 </div>
                 <div className={styles.destinationContent}>
                     <div className={styles.ButtonContainer}>
@@ -46,17 +34,17 @@ function Destination() {
                         <button onClick={() => setCurrentData(3)} className={currentData === 3? styles.Select : ""}>TITAN</button>
                     </div>
                     <div className={styles.descriptionSection}>
-                        <h1>{data && (data[currentData].name).toUpperCase()}</h1>
-                        <p>{data && data[currentData].description}</p>
+                        <h1>{(data.destinations[currentData].name).toUpperCase()}</h1>
+                        <p>{data.destinations[currentData].description}</p>
                     </div>
                     <div className={styles.travelSection}>
                         <div>
                             <h3>AVG. DISTANCE</h3>
-                            <p>{data && (data[currentData].distance).toUpperCase()}</p>
+                            <p>{(data.destinations[currentData].distance).toUpperCase()}</p>
                         </div>
                         <div>
                             <h3>AVG. TRAVEL TIME</h3>
-                            <p>{data && (data[currentData].travel).toUpperCase()}</p>
+                            <p>{data.destinations[currentData].travel.toUpperCase()}</p>
                         </div>
                     </div>
                 </div>

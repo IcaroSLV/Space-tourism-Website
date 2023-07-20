@@ -1,37 +1,16 @@
 import styles from './Technology.module.css'
 import { useState, useEffect } from 'react'
 
-import launchVehicleLarge from '../../img/technology/image-launch-vehicle-landscape.jpg'
+import data from '../../data.json'
+
 import launchVehicleShort from '../../img/technology/image-launch-vehicle-portrait.jpg'
-import spaceCapsuleLarge from '../../img/technology/image-space-capsule-landscape.jpg'
 import spaceCapsuleShort from '../../img/technology/image-space-capsule-portrait.jpg'
-import spaceportLarge from '../../img/technology/image-spaceport-landscape.jpg'
 import spaceportShort from '../../img/technology/image-spaceport-portrait.jpg'
 
 function Technology() {
 
-    const [data, setData] = useState(null)
     const [currentData, setCurrentData] = useState(0)
     const TechnologyImg = [launchVehicleShort, spaceportShort, spaceCapsuleShort]
-
-    
-    // BUSCAR INFORMAÇÕES NA API
-    useEffect(() => {
-
-        const loadData = async() => {
-    
-        const res = await fetch("http://localhost:5000/technology")
-        .then(resp => resp.json())
-        .then(data => data)
-        .catch(err => console.log(err))
-    
-        setData(res)
-    
-        }
-    
-        loadData()
-      }, [])
-
 
     return(
         <div className={styles.TechnologyContent}>
@@ -45,8 +24,8 @@ function Technology() {
                     </div>
                     <div className={styles.TechnologyDescription}>
                         <h3>In Terminology...</h3>
-                        <h1>{data && data[currentData].name}</h1>
-                        <p>{data && data[currentData].description}</p>
+                        <h1>{data.technology[currentData].name}</h1>
+                        <p>{data.technology[currentData].description}</p>
                     </div>
                     <div className={styles.TechnologyImg}>
                         <img src={TechnologyImg[currentData]}></img>
