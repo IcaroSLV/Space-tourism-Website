@@ -24,6 +24,3 @@ Para instalar todas as dependências, execute o seguinte comando:
 npm install
 # ou
 yarn install
-
-
-
