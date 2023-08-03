@@ -1,22 +1,22 @@
 {
     "destinations": [
       {
-        "name": "Moon",
+        "name": "Lua",
         "images": {
           "png": "../img/destination/image-moon.png"
         },
-        "description": "See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.",
+        "description": "Veja nosso planeta como você nunca viu antes. Uma viagem relaxante perfeita para ajudar a recuperar a perspectiva e voltar revigorado. Enquanto estiver lá, conheça um pouco da história visitando os locais de pouso da Luna 2 e da Apollo 11.",
         "distance": "384,400 km",
-        "travel": "3 days"
+        "travel": "3 dias"
       },
       {
-        "name": "Mars",
+        "name": "Marte",
         "images": {
           "png": "../../img/destination/image-mars.png"
         },
-        "description": "Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!",
+        "description": "Não se esqueça de levar suas botas de caminhada. Você precisará deles para enfrentar o Olympus Mons, a montanha planetária mais alta do nosso sistema solar. É duas vezes e meia o tamanho do Everest!",
         "distance": "225 mil. km",
-        "travel": "9 months"
+        "travel": "9 meses"
       },
       {
         "name": "Europa",
@@ -24,9 +24,9 @@
           "png": "./assets/destination/image-europa.png",
           "webp": "./assets/destination/image-europa.webp"
         },
-        "description": "The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.",
+        "description": "A menor das quatro luas galileanas que orbitam Júpiter, Europa é o sonho de um amante do inverno. Com uma superfície gelada, é perfeito para patinar no gelo, curling, hóquei ou simplesmente relaxar em sua confortável cabana de inverno.",
         "distance": "628 mil. km",
-        "travel": "3 years"
+        "travel": "3 anos"
       },
       {
         "name": "Titan",
@@ -34,9 +34,9 @@
           "png": "./assets/destination/image-titan.png",
           "webp": "./assets/destination/image-titan.webp"
         },
-        "description": "The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.",
+        "description": "A única lua conhecida por ter uma atmosfera densa além da Terra, Titã é um lar longe de casa (apenas algumas centenas de graus mais frio!). Como bônus, você obtém vistas impressionantes dos Anéis de Saturno.",
         "distance": "1.6 bil. km",
-        "travel": "7 years"
+        "travel": "7 anos"
       }
     ],
     "crew": [
@@ -46,8 +46,8 @@
           "png": "./assets/crew/image-douglas-hurley.png",
           "webp": "./assets/crew/image-douglas-hurley.webp"
         },
-        "role": "Commander",
-        "bio": "Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2."
+        "role": "Comandante",
+        "bio": "Douglas Gerald Hurley é um engenheiro americano, ex-piloto do Corpo de Fuzileiros Navais e ex-astronauta da NASA. Ele se lançou ao espaço pela terceira vez como comandante do Crew Dragon Demo-2."
       },
       {
         "name": "Mark Shuttleworth",
@@ -55,8 +55,8 @@
           "png": "./assets/crew/image-mark-shuttleworth.png",
           "webp": "./assets/crew/image-mark-shuttleworth.webp"
         },
-        "role": "Mission Specialist",
-        "bio": "Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist."
+        "role": "Especialista em missão",
+        "bio": "Mark Richard Shuttleworth é o fundador e CEO da Canonical, a empresa por trás do sistema operacional Ubuntu baseado em Linux. Shuttleworth se tornou o primeiro sul-africano a viajar para o espaço como turista espacial."
       },
       {
         "name": "Victor Glover",
@@ -64,8 +64,8 @@
           "png": "./assets/crew/image-victor-glover.png",
           "webp": "./assets/crew/image-victor-glover.webp"
         },
-        "role": "Pilot",
-        "bio": "Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer."
+        "role": "Piloto",
+        "bio": "Piloto no primeiro voo operacional do SpaceX Crew Dragon para a Estação Espacial Internacional. Glover é um comandante da Marinha dos Estados Unidos, onde pilota um F/A-18. Ele foi membro da tripulação da Expedição 64 e serviu como engenheiro de vôo de sistemas de estação."
       },
       {
         "name": "Anousheh Ansari",
@@ -73,18 +73,18 @@
           "png": "./assets/crew/image-anousheh-ansari.png",
           "webp": "./assets/crew/image-anousheh-ansari.webp"
         },
-        "role": "Flight Engineer",
-        "bio": "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space."
+        "role": "Engenheiro de voo",
+        "bio": "Anousheh Ansari é uma engenheira iraniana-americana e cofundadora da Prodea Systems. Ansari foi a quarta turista espacial autofinanciada, a primeira mulher autofinanciada a voar para a ISS e a primeira iraniana no espaço."
       }
     ],
     "technology": [
       {
-        "name": "Launch vehicle",
+        "name": "Veículo de lançamento",
         "images": {
           "portrait": "./assets/technology/image-launch-vehicle-portrait.jpg",
           "landscape": "./assets/technology/image-launch-vehicle-landscape.jpg"
         },
-        "description": "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!"
+        "description": "Um veículo de lançamento ou foguete transportador é um veículo movido a foguete usado para transportar uma carga útil da superfície da Terra para o espaço, geralmente para a órbita da Terra ou além. Nosso foguete transportador WEB-X é o mais poderoso em operação. Com 150 metros de altura, é uma visão inspiradora na plataforma de lançamento!"
       },
       {
         "name": "Spaceport",
@@ -92,15 +92,15 @@
           "portrait": "./assets/technology/image-spaceport-portrait.jpg",
           "landscape": "./assets/technology/image-spaceport-landscape.jpg"
         },
-        "description": "A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch."
+        "description": "Um espaçoporto ou cosmódromo é um local para lançamento (ou recebimento) de espaçonaves, por analogia com o porto marítimo para navios ou aeroporto para aeronaves. Com sede no famoso Cabo Canaveral, nosso espaçoporto está idealmente situado para aproveitar a rotação da Terra para o lançamento."
       },
       {
-        "name": "Space capsule",
+        "name": "Cápsula espacial",
         "images": {
           "portrait": "./assets/technology/image-space-capsule-portrait.jpg",
           "landscape": "./assets/technology/image-space-capsule-landscape.jpg"
         },
-        "description": "A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained."
+        "description": "Uma cápsula espacial é uma espaçonave frequentemente tripulada que usa uma cápsula de reentrada de corpo rombudo para reentrar na atmosfera da Terra sem asas. Nossa cápsula é onde você passará seu tempo durante o voo. Inclui um ginásio espacial, cinema e muitas outras atividades para o manter entretido."
       }
     ]
   }

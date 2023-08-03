@@ -8,19 +8,19 @@ function Home() {
         <div className={styles.HomeContainer}>
             <div className={styles.ContentContainer}>
                 <div className={styles.description}>
-                    <h3>SO, YOU WANT TO TRAVEL TO </h3>
-                    <h1>SPACE</h1>
+                    <h3>ENTÃO VOCÊ QUER VIAJAR PARA O</h3>
+                    <h1>ESPAÇO</h1>
                     <p>
-                        Let's face it; you want to go space, 
-                        you migth as well genuinely go to 
-                        outer space and not hover kind of 
-                        on the edge of it. well sit back, 
-                        and relax because we'll give you a 
-                        truly out of this world experience!
+                        Vamos encarar! você quer ir para o espaço,
+                        você também pode ir genuinamente para
+                        espaço sideral e não pairar tipo de
+                        à beira dela. bem, sente-se,
+                        e relaxe porque vamos dar-lhe um
+                        verdadeiramente fora desta experiência mundial!
                     </p>
                 </div>
                 <div className={styles.button}>
-                    <Link to="/Destination"><button>EXPLORE</button></Link>
+                    <Link to="/Destination"><button>EXPLORAR</button></Link>
                 </div>
             </div>
         </div>

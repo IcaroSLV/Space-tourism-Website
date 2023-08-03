@@ -35,9 +35,9 @@ function App() {
           <button className='buttonHamburguer' onClick={() => setmenuisOpen(!menuIsOpen)}><img src={menuHangurguer}/></button>
           <div className={menuIsOpen? "HamburguerMenu" : "linkContainer"}>
           <Link  to="/" onClick={() => ClickonPage(1)}>HOME</Link>
-          <Link to="/destination" onClick={() => ClickonPage(2)} >DESTINATION</Link>
-          <Link to="/crew" onClick={() => ClickonPage(3)}>CREW</Link>
-          <Link to="/technology" onClick={() => ClickonPage(4)}>TECHNOLOGY</Link>
+          <Link to="/destination" onClick={() => ClickonPage(2)} >DESTINO</Link>
+          <Link to="/crew" onClick={() => ClickonPage(3)}>TRIPULAÇÃO</Link>
+          <Link to="/technology" onClick={() => ClickonPage(4)}>TECNOLOGIA</Link>
         </div>
       </div>
 

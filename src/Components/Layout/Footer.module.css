@@ -1,0 +1,8 @@
+.Footer {
+    color: white;
+    align-self: flex-end;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

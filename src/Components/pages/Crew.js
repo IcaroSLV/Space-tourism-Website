@@ -29,7 +29,7 @@ function Crew() {
         <div className={styles.CrewContainer}>
             <div className={styles.contentContainer}>
                 <div className={styles.CrewDescription}>
-                    <h1><span>02</span> MEET YOUR CREW</h1>
+                    <h1><span>02</span> CONHEÇA SUA EQUIPE</h1>
                     <div className={styles.CrewBio}>
                         <h3>{data.crew[currentData].role}</h3>
                         <h1>{data.crew[currentData].name}</h1>
